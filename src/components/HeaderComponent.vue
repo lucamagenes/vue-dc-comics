@@ -32,7 +32,6 @@
 #site_header {
   width: 100%;
   .container {
-    padding: 1.5rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

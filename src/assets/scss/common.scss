@@ -9,8 +9,18 @@ $color-brand: #0482f9;
 $color-main: #1c1c1c;
 $color-footer: #303030;
 $color-text-primary: #ffffff;
+$color-text-secondary: #797979;
 
 .container{
     width: 1200px;
     margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+  width: calc(100% / 3);
 }
