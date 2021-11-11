@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+$color-brand: #0482f9;
+$color-main: #1c1c1c;
+$color-footer: #303030;
+$color-text-primary: #ffffff;
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
