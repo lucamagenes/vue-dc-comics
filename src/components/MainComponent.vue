@@ -1,6 +1,7 @@
 <template>
   <main id="site_main">
     <div id="main_content">
+      <Hero />
       <div class="container">
         <div class="row">
           <Thumbnail
@@ -10,8 +11,13 @@
             :titolo="comic.series"
             class="col-2"
           />
+          <!-- Thumbnail -->
+        </div>
+        <div class="load_more">
+          <button>LOAD MORE</button>
         </div>
       </div>
+      <!-- container -->
     </div>
     <!-- main content -->
     <div id="digital_comics">
@@ -61,6 +67,7 @@
 
 <script>
 import Thumbnail from "./Thumbnail.vue";
+import Hero from "./Hero.vue";
 
 export default {
   data() {
@@ -154,6 +161,7 @@ export default {
     };
   },
   components: {
+    Hero,
     Thumbnail,
   },
 };
@@ -167,10 +175,22 @@ export default {
     background: $color-main;
 
     .container {
-      padding: 3rem 0;
+      padding-top: 3rem;
 
       h1 {
         color: $color-text-primary;
+      }
+
+      .load_more {
+        text-align: center;
+        padding: 2rem 0 1rem 0;
+
+        button {
+          color: $color-text-primary;
+          background-color: $color-brand;
+          border: none;
+          padding: 0.5rem 3rem;
+        }
       }
     }
   }
