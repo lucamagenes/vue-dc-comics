@@ -7,7 +7,7 @@
 
 <style lang="scss">
 .jumbotron {
-  height: 300px;
+  height: 400px;
   background-image: url("../assets/jumbotron.jpg");
   background-position-x: center;
   background-size: cover;
