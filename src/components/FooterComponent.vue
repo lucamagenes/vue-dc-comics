@@ -129,6 +129,7 @@ footer {
                 text-decoration: none;
                 color: $color-text-secondary;
                 font-size: 0.8rem;
+                font-weight: bold;
               }
             }
           }
