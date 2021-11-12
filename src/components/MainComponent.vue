@@ -3,6 +3,9 @@
     <div id="main_content">
       <Hero />
       <div class="container">
+        <div class="serie_title">
+          <h1>CURRENT SERIES</h1>
+        </div>
         <div class="row">
           <Thumbnail
             v-for="comic in comics"
@@ -176,9 +179,20 @@ export default {
 
     .container {
       padding-top: 3rem;
+      position: relative;
 
-      h1 {
-        color: $color-text-primary;
+      .serie_title {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -4%;
+        background-color: $color-brand;
+        padding: 1rem 2rem;
+
+        h1 {
+          color: $color-text-primary;
+          font-size: 1.3rem;
+        }
       }
 
       .load_more {
