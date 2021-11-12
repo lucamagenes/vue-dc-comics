@@ -2,12 +2,15 @@
   <main id="site_main">
     <div id="main_content">
       <div class="container">
-        <Thumbnail
-          v-for="comic in comics"
-          :key="comic.titolo"
-          :image="comic.thumb"
-          :titolo="comic.series"
-        />
+        <div class="row">
+          <Thumbnail
+            v-for="comic in comics"
+            :key="comic.titolo"
+            :image="comic.thumb"
+            :titolo="comic.series"
+            class="col-2"
+          />
+        </div>
       </div>
     </div>
     <!-- main content -->
