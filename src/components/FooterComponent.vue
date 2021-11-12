@@ -102,8 +102,10 @@
 
 footer {
   #top_footer {
-    background-image: url("../assets/footer-bg.jpg");
     height: 370px;
+    background-image: url("../assets/footer-bg.jpg");
+    background-position-x: center;
+    background-size: cover;
 
     .container {
       display: flex;
